@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="/src/main.jsx"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Vite + React</title>
+  </head>
+  <body>
+
+   
+
+
+
+    
+
+
+
+
+    <div id="root">
+     
+  
+ 
+      
+
+
+
+
+
+
+
+
+
+     
+ 
+      <canvas   id="fondo"></canvas>
+
+     
+      <div>
+  
+      </div>
+
+    </div>
+
+
+
+    <canvas   id="Planetario"></canvas>
+
+    <div  id="tarjeta"  class="ubicacion oculto">
+  
+        <div class="modal-dialog ">
+          <div class="modal-content  bg-dark">
+            <div class="modal-body tama  imagenB flex-column d-flex justify-content-center p-2">
+              <div class="card bg-dark " >
+                  <img id ="imagen" class="card-img-top" src="" alt="Card image cap">
+                  <div class="card-body  imagenB ">
+                    <h5 id="titulo" class="card-title text-white">Card title</h5>
+                    <p id="texto" class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   
+                  </div>
+              </div>
+              <button id="botonAtras" type="button" class="btn btn-secondary p-2">atras</button>
+            </div>
+       
+          </div>
+        </div>
+ 
+
+    </div>
+    <script>
+      const boton =document.getElementById("botonAtras");
+      const tarjeta =document.getElementById("tarjeta");
+      const canvas= document.getElementById("Planetario");
+     
+      boton.addEventListener("click", function() {
+        tarjeta.classList.add("oculto")
+    tarjeta.classList.remove("mostrar");
+    canvas.style.zIndex=0;
+
+  
+});
+    </script>
+    
+
+
+    <button  id="pause" class="botonPause"  type="button">   </button>
+  </body>
+</html>
